@@ -1,143 +1,111 @@
-{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Title styling for main title */
-.title {
-    font-family: 'Rubik Mono One', monospace; /* Font for the title */
-    font-size: 2.5em; /* Size adjustment */
-    color: #dc2f2f; /* Color for visibility */
-    position: absolute; /* Positioning in top left */
-    top: 20px; /* Space from the top */
-    left: 20px; /* Space from the left */
-    z-index: 10; /* Layer above other content */
-}
-
-/* General font settings for headings */
-h1, h2 {
-    font-family: 'Open Sans', sans-serif; /* Use sans-serif font */
-    color: #333; /* Standard text color */
-}
-
-/* Section titles styling */
-.summary-section h2,
-.visualization-section h2 {
-    font-family: 'Open Sans', sans-serif; /* Apply sans-serif font */
-    color: #333; /* Title color */
-}
-
-/* Summary text styling */
-.summary-section p {
-    font-family: 'Open Sans', sans-serif; /* Ensure summary text uses sans-serif */
-    font-size: 1.1em; /* Font size */
-    line-height: 1.5; /* Line height for readability */
-    color: #555; /* Text color */
-}
-
-/* Body styling with gradient background */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif; /* Fallback font */
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%); /* Gradient background */
-    color: #333; /* Default text color */
-    display: flex; /* Center alignment */
-    justify-content: center; /* Center alignment */
-    align-items: center; /* Center alignment */
-    min-height: 100vh; /* Full viewport height */
-    padding: 20px; /* Padding around body */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-/* Container for main content */
+/* Container Styling */
 .container {
-    width: 100%; /* Full width */
-    max-width: 800px; /* Max width */
-    background-color: #f8f8f8; /* Light background */
-    padding: 20px; /* Padding inside container */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 100%;
+    max-width: 800px;
+    background-color: #f8f8f8; /* Fourth color for container */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Main heading styling */
+/* Heading Styles */
 h1 {
-    text-align: center; /* Center align */
-    font-size: 2em; /* Size of the main title */
-    color: #dc2f2f; /* Title color */
-    margin-bottom: 20px; /* Space below title */
-    font-weight: bold; /* Bold title */
+    text-align: center;
+    font-size: 2em;
+    color: #dc2f2f; /* Second color for main title */
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-/* Section heading styling */
 h2 {
-    text-align: center; /* Center align */
-    font-size: 1.5em; /* Size of section titles */
-    color: #363636; /* Section title color */
-    margin-bottom: 10px; /* Space below section titles */
+    text-align: center;
+    font-size: 1.5em;
+    color: #363636; /* First color for section titles */
+    margin-bottom: 10px;
 }
 
-/* General section styling */
+/* Section Styling */
 .input-section, .summary-section, .visualization-section {
-    margin-top: 20px; /* Space above sections */
+    margin-top: 20px;
 }
 
-/* Textarea styling */
+/* Textarea Styling */
 textarea {
-    width: 100%; /* Full width */
-    padding: 15px; /* Padding inside textarea */
-    font-size: 1em; /* Font size */
-    border: 2px solid #dc2f2f; /* Border color */
-    border-radius: 8px; /* Rounded corners */
-    resize: none; /* Disable resizing */
-    background-color: #f8f8f8; /* Background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border: 2px solid #dc2f2f; /* Second color for border */
+    border-radius: 8px;
+    resize: none;
+    background-color: #f8f8f8; /* Fourth color for textarea background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Button styling */
+/* Button Styling */
 button {
-    width: 100%; /* Full width */
-    padding: 12px; /* Padding inside button */
-    margin-top: 10px; /* Space above button */
-    font-size: 1em; /* Font size */
-    font-weight: bold; /* Bold button text */
-    background-color: #ff894c; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transition */
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #ff894c; /* Third color for button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
-    background-color: #dc2f2f; /* Change color on hover */
-    transform: scale(1.05); /* Slight scale effect */
+    background-color: #dc2f2f; /* Second color on hover */
+    transform: scale(1.05);
 }
 
-/* Summary text styling */
+/* Summary Text Styling */
 .summary-section p {
-    font-size: 1.1em; /* Font size */
-    line-height: 1.6; /* Line height for readability */
-    color: #363636; /* Text color */
-    background-color: #f8f8f8; /* Background color */
-    padding: 15px; /* Padding inside summary */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #363636; /* First color for text */
+    background-color: #f8f8f8; /* Fourth color for summary background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Visualization section styling */
+/* Visualization Section Styling */
+/* Visualization Section Styling */
 .visualization-section {
-    margin-top: 30px; /* Space above visualization */
-    text-align: center; /* Center align */
-    background-color: #f8f8f8; /* Light background */
-    padding: 20px; /* Padding inside visualization */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-top: 30px;
+    text-align: center;
+    background-color: #f8f8f8; /* Fourth color for light background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Canvas styling for frequency chart */
+/* Canvas Styling */
 canvas {
-    max-width: 100%; /* Full width */
-    height: auto; /* Auto height */
-    border: 2px solid #dc2f2f; /* Border color */
-    border-radius: 8px; /* Rounded corners */
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #dc2f2f; /* Second color for border */
+    border-radius: 8px;
 }
