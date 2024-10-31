@@ -1,0 +1,143 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Title styling for main title */
+.title {
+    font-family: 'Rubik Mono One', monospace; /* Font for the title */
+    font-size: 2.5em; /* Size adjustment */
+    color: #dc2f2f; /* Color for visibility */
+    position: absolute; /* Positioning in top left */
+    top: 20px; /* Space from the top */
+    left: 20px; /* Space from the left */
+    z-index: 10; /* Layer above other content */
+}
+
+/* General font settings for headings */
+h1, h2 {
+    font-family: 'Open Sans', sans-serif; /* Use sans-serif font */
+    color: #333; /* Standard text color */
+}
+
+/* Section titles styling */
+.summary-section h2,
+.visualization-section h2 {
+    font-family: 'Open Sans', sans-serif; /* Apply sans-serif font */
+    color: #333; /* Title color */
+}
+
+/* Summary text styling */
+.summary-section p {
+    font-family: 'Open Sans', sans-serif; /* Ensure summary text uses sans-serif */
+    font-size: 1.1em; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+    color: #555; /* Text color */
+}
+
+/* Body styling with gradient background */
+body {
+    font-family: Arial, sans-serif; /* Fallback font */
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%); /* Gradient background */
+    color: #333; /* Default text color */
+    display: flex; /* Center alignment */
+    justify-content: center; /* Center alignment */
+    align-items: center; /* Center alignment */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding around body */
+}
+
+/* Container for main content */
+.container {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Max width */
+    background-color: #f8f8f8; /* Light background */
+    padding: 20px; /* Padding inside container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center; /* Center align */
+    font-size: 2em; /* Size of the main title */
+    color: #dc2f2f; /* Title color */
+    margin-bottom: 20px; /* Space below title */
+    font-weight: bold; /* Bold title */
+}
+
+/* Section heading styling */
+h2 {
+    text-align: center; /* Center align */
+    font-size: 1.5em; /* Size of section titles */
+    color: #363636; /* Section title color */
+    margin-bottom: 10px; /* Space below section titles */
+}
+
+/* General section styling */
+.input-section, .summary-section, .visualization-section {
+    margin-top: 20px; /* Space above sections */
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding inside textarea */
+    font-size: 1em; /* Font size */
+    border: 2px solid #dc2f2f; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    background-color: #f8f8f8; /* Background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Button styling */
+button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside button */
+    margin-top: 10px; /* Space above button */
+    font-size: 1em; /* Font size */
+    font-weight: bold; /* Bold button text */
+    background-color: #ff894c; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #dc2f2f; /* Change color on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Summary text styling */
+.summary-section p {
+    font-size: 1.1em; /* Font size */
+    line-height: 1.6; /* Line height for readability */
+    color: #363636; /* Text color */
+    background-color: #f8f8f8; /* Background color */
+    padding: 15px; /* Padding inside summary */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Visualization section styling */
+.visualization-section {
+    margin-top: 30px; /* Space above visualization */
+    text-align: center; /* Center align */
+    background-color: #f8f8f8; /* Light background */
+    padding: 20px; /* Padding inside visualization */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Canvas styling for frequency chart */
+canvas {
+    max-width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    border: 2px solid #dc2f2f; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+}
