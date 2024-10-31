@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer & Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Open+Sans:wght@400&display=swap" rel="stylesheet"> <!-- Combined font imports -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Text Summarizer & Visualization</h1> <!-- Main title -->
+        
+        <!-- Input Section -->
+        <section class="input-section">
+            <textarea id="text-input" placeholder="Enter your text here..." rows="10"></textarea>
+            <button id="summarize-button">Summarize Text</button> <!-- Summarize button -->
+        </section>
+        
+        <!-- Summary Display Section -->
+        <section class="summary-section">
+            <h2>Summary</h2>
+            <p id="summary-output"></p> <!-- Display summary output -->
+        </section>
+        
+        <!-- Visualization Section -->
+        <section class="visualization-section">
+            <h2>Keyword Frequency</h2>
+            <canvas id="frequency-chart"></canvas> <!-- Frequency chart canvas -->
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+    <script src="script.js"></script> <!-- External script for functionality -->
+</body>
+</html>
